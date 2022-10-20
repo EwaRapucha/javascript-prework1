@@ -8,7 +8,7 @@
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "innit:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore.",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:html",
     "test:html": "html-validate *.html",
     "build": "npm-run-all build:* test",
     "build:sass": "sass --style=compressed --no-source-map sass:css",
