@@ -74,16 +74,22 @@ function buttonClicked() {
   printMessage("Twój ruch to kamień");
 }
 let playRock = document.getElementById("play-rock");
-playRock.addEventListener("click", buttonClicked);
+playRock.addEventListener("click", function () {
+  playGame(1);
+});
 
 function buttonClicked() {
   printMessage("Twój ruch to papier");
 }
 let playPaper = document.getElementById("play-paper");
-playPaper.addEventListener("click", buttonClicked);
+playPaper.addEventListener("click", function () {
+  playGame(2);
+});
 
 function buttonClicked() {
   printMessage("Twój ruch to nożyce");
 }
 let playScissors = document.getElementById("play-scissors");
-playScissors.addEventListener("click", buttonClicked);
+playScissors.addEventListener("click", function () {
+  playGame(3);
+});
